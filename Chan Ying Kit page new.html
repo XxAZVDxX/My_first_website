@@ -1,25 +1,42 @@
+<!--Main_Page: Chan Ying Kit page new.html-->
+<!--Ctrl + F to search "Part_X.X"-->
+<!--Part_1: CSS_Files-->
+<!--Part_2: Body-->
+<!--Part_2.1: Social_Madia_Icon_Bar-->
+<!--Part_2.2: Header_Menu: Drop_Down & Side_Menu-->
+<!--Part_2.3: Toggle: Light & Dark_Mode-->
+<!--Part_2.4: Toggle: Text_Size-->
+<!--Part_2.5: Search_Box-->
+<!--Part_2.6: Scroll_Progress_Bar-->
+<!--Part_2.7: Top_Btn-->
+<!--Part_2.8: Background & Animation_Galaxy-->
+<!--Part_3: Body_header-->
+<!--Part_3.1: Image_Slideshow-->
+<!--Part_3.2: Footer_Menu-->
+<!--Part_4: JS_Files-->
 <!doctype html>
 <html lang="en-US" dir="ltr">
 <head>
-<meta charset="utf-8">
 
-<title>Chan YK.html </title>
+<title>home page.html </title>	
+
+<meta charset="utf-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<!--CSS files-->
+<!--Part_1-->
+<!--CSS_Files-->
+<link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="language_change.css">
+<link rel="stylesheet" href="language_select.css">
 
-<link rel="stylesheet" href="Galaxy_animation.css">
+<link rel="stylesheet" href="Galaxy_animation.css"><!--CSS of Background_Galaxy-->
 
-<link rel="icon" type="image/x-icon" href="datafile/images.jpg">
+<link rel="icon" href="datafile/images.jpg" type="image/x-icon">
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">	
-
-<link rel="stylesheet" href="style.css">
 
 <link rel='stylesheet' href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
 
@@ -27,12 +44,15 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Nanum+Gothic:700|Raleway&display=swap">
 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
-	
-<body>
 
-	<!--There is social media icon bar-->
+<!--Part_2-->
+<!--Body-->
+<body>
+	<!--Part_2.1-->
+	<!--Social_Madia_Icon_Bar-->
 	<div id="mySidenav" class="icon-bar">
 		<a href="https://www.facebook.com/groups/1341837839741935" class="facebook"><i class="fa fa-facebook"></i></a> 
 		<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>  
@@ -40,115 +60,163 @@
 		<a href="https://www.youtube.com/channel/UCr_DB57VFq9hd5Zu-r1BwJA" class="youtube"><i class="fa fa-youtube"></i></a> 
 		<a href="https://github.com/XxAZVDxX" class="github"><i class="fa fa-github"></i></a>
 	</div>
-	
+
+	<!--Part_2.2-->
+	<!--Header_Menu: Drop_Down & Side_Menu-->
 	<nav>
 		<div class="navbar">
 			<i class='bx bx-menu'></i>
-				<div class="logo">
-					<a href="Chan Ying Kit page new.html">AZVD</a>
+			<div class="logo">
+				<a href="Chan Ying Kit page new.html">AZVD</a>
+			</div>
+
+			<div class="nav-links">
+				<div class="sidebar-logo">
+					<span class="logo">
+						<img src="datafile/R.png"></img>
+					</span>
+					<span class="logo-name">
+						<p>AZVD</p>
+					</span>
+					<i class='bx bx-x'></i>
 				</div>
-				<div class="nav-links">
-					<div class="sidebar-logo">
-						<span class="logo">
-							<img src="datafile/R.png"></img>
-						</span>
-						<span class="logo-name">
-							<p>AZVD</p>
-						</span>
-						<i class='bx bx-x' ></i>
-					</div>
-						<ul class="links">
-							<li>	
-							<a href="Chan Ying Kit page.html">HOME</a>
+
+					<ul class="links">
+						<li>	
+							<a href="Chan Ying Kit page new.html">HOME</a>
 						</li>
-							<li>
+						<li>
 							<a href="#">PROJECT</a>
 							<i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
-							<ul class="htmlCss-sub-menu sub-menu">
-								<li><a href="#">Web Design</a></li>
-								<li><a href="#">Login Forms</a></li>
-								<li><a href="#">Card Design</a></li>
+							<ul class="htmlCss-sub-menu sub-menu header-cat-links">
+								<li><a href="#"><span>Design</span></a></li>
+								<li><a href="#"><span>Login Forms</span></a></li>
+								<li><a href="#"><span>Card Design</span></a></li>
 								<li class="more">
-									<span><a href="#">More</a>
-										<i class='bx bxs-chevron-right arrow more-arrow'></i>
-									</span>
-									<ul class="more-sub-menu sub-menu">
-										<li><a href="#">Neumorphism</a></li>
-										<li><a href="#">Pre-loader</a></li>
-										<li><a href="#">Glassmorphism</a></li>
+									<a class="cat" href="#">More<i class='bx bxs-chevron-right arrow more-arrow'></i></a>										
+									<ul class="more-sub-menu sub-menu header-cat-links">
+										<li><a href="#"><span>Neumorphism</span></a></li>
+										<li><a href="#"><span>Pre-loader</span></a></li>
+										<li><a href="#"><span>Glassmorphism</span></a></li>
 									</ul>
 								</li>
 							</ul>
 						</li>
+
 						<li>
-							<a href="#">JAVASCRIPT</a>
-							<i class='bx bxs-chevron-down js-arrow arrow'></i>
-							<ul class="js-sub-menu sub-menu">
-								<li><a href="#">Dynamic Clock</a></li>
-								<li><a href="#">Form Validation</a></li>
-								<li><a href="#">Card Slider</a></li>
-								<li><a href="#">Complete Website</a></li>
+							<a href="#">JAVASCRIPT<i class='bx bxs-chevron-down js-arrow arrow'></i></a>							
+							<ul class="js-sub-menu sub-menu header-cat-links">
+								<li><a href="#"><span>Dynamic Clock</span></a></li>
+								<li><a href="#"><span>Form Validation</span></a></li>
+								<li><a href="#"><span>Card Slider</span></a></li>
+								<li><a href="#"><span>Complete Website</span></a></li>
 							</ul>
 						</li>
+
 						<li>
-							<a href="#">CONTACT US</a>
-							<i class='bx bxs-chevron-down arrow roll-arrow '></i>
-							<ul class="roll-sub-menu sub-menu">
-								<li><img src="datafile/QRCode Github.png"><a href="https://www.youtube.com/channel/UCr_DB57VFq9hd5Zu-r1BwJA"> Github</a></img></li>
-								<li><img src="datafile/QRCode YouTube.png"><a href="https://github.com/XxAZVDxX"> YouTube</a></img></li>
+							<a href="#">CONTACT US<i class='bx bxs-chevron-down arrow roll-arrow '></i></a>						
+							<ul class="roll-sub-menu sub-menu header-cat-links">
+								<li><img src="datafile/QRCode Github.png"><a href="https://www.youtube.com/channel/UCr_DB57VFq9hd5Zu-r1BwJA"><span>Github</span></a></img></li>
+								<li><img src="datafile/QRCode YouTube.png"><a href="https://github.com/XxAZVDxX"><span>YouTube</span></a></img></li>
 							</ul>
 						</li>
+
 						<li>
-							<a href="#">ABOUT US</a>
-							<i class='bx bxs-chevron-down arrow roll2-arrow '></i>
-							<ul class="roll2-sub-menu sub-menu">
-								<li><a href="#">Teams</a></li>
+							<a href="ABOUTUS.html">ABOUT US<i class='bx bxs-chevron-down arrow roll2-arrow '></i></a>		
+							<ul class="roll2-sub-menu sub-menu header-cat-links">
+								<li><a href="TEAM MEMBER.html"><span>Team Member</span></a></li>
 							</ul>
 						</li>
+
+						<!--Language_Selector-->
+						<select id="langSelector">
+								<option value="en">English</option>
+								<option value="it">Italian</option>
+								<option value="es">Espanol</option>
+								<option value="de">Dutch</option>
+								<option value="zh">Chinese</option>
+						</select>
+
 						<div class="dropdown" tab-index="0">
 							<button id="dropdown-btn"></button>
 							<ul class="dropdown-content" id="dropdown-content"></ul>
 						</div>
 					</ul>
-					<div class="sidebar-logo">
-						<span class="logo-name">
-							<a href="https://www.facebook.com/groups/1341837839741935" class="facebook"><i class="fa fa-facebook"></i></a> 
-							<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>  
-							<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-							<a href="https://www.youtube.com/channel/UCr_DB57VFq9hd5Zu-r1BwJA" class="youtube"><i class="fa fa-youtube"></i></a> 
-							<a href="https://github.com/XxAZVDxX" class="github"><i class="fa fa-github"></i></a>
-						</span>
-					</div>
-		</div>
-		<div class="search-box">
-			<i class='bx bx-search'></i>
-			<div class="input-box">
-				<input type="text" placeholder="Search...">
+
+				<!--Side_Menu_Social_Media_Bar-->
+				<div class="sidebar-logo">
+					<span class="logo-name">
+						<a href="https://www.facebook.com/groups/1341837839741935" class="facebook"><i class="fa fa-facebook"></i></a> 
+						<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>  
+						<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+						<a href="https://www.youtube.com/channel/UCr_DB57VFq9hd5Zu-r1BwJA" class="youtube"><i class="fa fa-youtube"></i></a> 
+						<a href="https://github.com/XxAZVDxX" class="github"><i class="fa fa-github"></i></a>
+					</span>
+				</div>
+
+				<!--Header_CopyRight & Owner-->
+				<div class="sidebar-logo">
+					<span class="copyrigth_name">
+						<div id="copyright">
+							<span><hr>AZVD &copy; 2023</span>
+						</div>	
+						<div id="owner">
+							<span>
+								Designed by <a href="https://www.codingtuting.com">JohnnyChan</a>
+							</span>
+						</div>
+					</span>
+				</div>	
 			</div>
-		</div>
-		<button id="darkbtn" onclick="drakFunction()" class="container" aria-label="Toggle color mode" title="Toggle color mode">
-			<div class="sun visible"></div>
-			<div class="moon">
-				<div class="star"></div>
-				<div class="star small"></div>
+
+			<!--Part_2.3-->
+			<!--Toggle: Light & Dark_Mode-->
+			<button id="darkbtn" onclick="drakFunction()" class="container" aria-label="Toggle color mode" title="Toggle color mode">
+				<div class="sun visible"></div>
+				<div class="moon">
+					<div class="star"></div>
+					<div class="star small"></div>
+				</div>
+			</button>
+
+			<!--Part_2.4-->
+			<!--Toggle: Text_Size-->
+			<button id="t-sizebtn" onclick="textsizeFunction()" class="t-container" aria-label="Toggle color mode" title="Toggle color mode">
+				<div class="A visible"><a>A</a></div>
+				<div class="a"><a>a</a></div>
+			</button>	
+			
+			<!--Part_2.5-->
+			<!--Search_Box-->
+			<div class="search-box">
+				<i class='bx bx-search'></i>
+				<div class="input-box">
+					<input type="text" placeholder="Search...">
+				</div>
 			</div>
-		</button>
-	</nav>
+			<br>
+		</div>	
+
+		<!--Part_2.6-->
+		<!--Scroll_Progress_Bar-->
+		<div class="header">
+			<div class="progress-container">
+				<div class="pro-bar" id="myBar"></div>
+			</div>  
+		</div>
+	</nav>	
 		
 	<br>
 	<br>
 	<br>
-					
+
+	<!--Part_2.7-->
+	<!--Top_Btn-->				
 	<button onclick="topFunction()" id="topBtn" title="Go to top"><img width="20" height="auto" src="c:\Users\ZHANG XUELIAN\Desktop\Chan Ying Kit 220083518 assignment multimedia-website\datafile\images.jpg"></img></button>
 	
-	<div class="header">
-		<div class="progress-container">
-			<div class="pro-bar" id="myBar"></div>
-		</div>  
-	</div>
-			  
-	
-		
+
+	<!--Part_2.8-->
+	<!--Background & Animation_Galaxy-->
 	<div class="bg"></div>
 	<div class="star-field">
 		<div class="layer"></div>
@@ -156,137 +224,61 @@
 		<div class="layer"></div>
 		<div class="layer"></div>
 	</div>
-	
-	<div class="Welcome_header">
-		<br>
-		<h2>Welcome to our website!!</h2>
-		<p>Change image every 2 seconds:</p>
+
+
+	<!--Part_3-->
+	<!--Body_header-->
+	<div class="Welcome_header w3-container w3-center w3-animate-right">
+		<div>
+			<h1><p class="lang lang-en">Welcome to use my website!!</p></h1>
+			<h1><p class="lang lang-de">Willkommen auf meiner Website!!</p></h1>
+			<h1><p class="lang lang-it">Il mio testo</p></h1>
+			<h1><p class="lang lang-es">El mi texto</p></h1>
+			<h1><p class="lang lang-zh">歡迎使用我的網站！！</p></h1>
+		</div>
 	</div>
+
+	<!--Part_3.1-->
+	<!--Image_Slideshow-->
 	<div class="slideshow-container">
 		<div class="imgmySlides imgfade">
 			<div class="imgcontainer">
 				<div class="numbertext">1 / 3</div>
-					<img src="datafile/img_nature_wide.jpg" style="width:100%">
+					<a href="project1.html"><img src="datafile/圖片_20231003223128.png" style="width:100%"></a> 
 				<div class="imgoverlay">Project-1: </div>
 			</div>
-		</div>
-			
+		</div>	
+
 		<div class="imgmySlides imgfade">
 			<div class="imgcontainer">
 				<div class="numbertext">2 / 3</div>
-					<img src="datafile/img_snow_wide.jpg" style="width:100%">
+				<a href="project2.html"><img src="datafile/img_snow_wide.jpg" style="width:100%"></a> 
 				<div class="imgoverlay">Project-2: </div>
 			</div>
-		</div>
-			
+		</div>	
+
 		<div class="imgmySlides imgfade">
 			<div class="imgcontainer">
 				<div class="numbertext">3 / 3</div>
-					<img src="datafile/img_mountains_wide.jpg" style="width:100%">
+				<a href="project3.html"><img src="datafile/img_mountains_wide.jpg" style="width:100%"></a> 
 				<div class="imgoverlay">Project-3: </div>
 			</div>
 		</div>
-
+		
 		<a class="prev" onclick="plusSlides(-1)">❮</a>
 		<a class="next" onclick="plusSlides(1)">❯</a>
-			
+		
 		<div style="text-align:center">
-			<span class="dot" onclick="currentSlide(3)"></span> 
 			<span class="dot" onclick="currentSlide(1)"></span> 
 			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span> 
 		</div>
 	</div>
 	
 	<div class="content">
 
-	<h1 align="center">
-		-------〘 =MEME= 〙-------
-	</h1>
-			
-	<hr color="#4A4A4A">
-		
-	<table>				
-		<tbody>	 
-			<tr>	
-				<td  height="500" width="1748" bgcolor="#494949" valign="top" rowspan="2">	
-					<a href="https://en.wikipedia.org/wiki/Rickrolling">
-						<font color="#000000">
-							<h1>
-								Reaction:
-							</h1>
-						</font>
-					</a>	
-				
-					<h3>
-					<p>
-						In an interview in March 2008, Astley said that he found the rickrolling of Scientology to be "hilarious"; he also said that he will not try to capitalise on the rickroll phenomenon with a new recording or remix of his own, but that he would be happy to have other artists remix it. Overall, Astley is not troubled by the phenomenon, stating that he finds it "bizarre and funny" and that his only concern is that his "daughter doesn't get embarrassed about it." A spokesperson for Astley's record label released a comment which showed that Astley's interest with the phenomenon had faded, as they stated, "I'm sorry, but he's done talking about Rickrolling".
-					</p>
-			
-					<p>
-						In November 2008, Astley was nominated for "Best Act Ever" at the MTV Europe Music Awards after the online nomination form was flooded with votes. The push to make Astley the winner of the award, as well as efforts to encourage MTV to personally invite Astley to the awards ceremony, continued after the announcement. On 10 October, Astley's website confirmed that an invitation to the awards had been received. On 6 November 2008, just hours before the ceremony was due to air, it was reported that MTV Europe did not want to give Astley the award at the ceremony, instead of wanting to present it at a later date. Many fans who voted for Astley felt the awards ceremony failed to acknowledge him as a legitimate artist. Astley stated in an interview that he felt the award was "daft", but noted that he thought that "MTV were thoroughly rickrolled", and went on to thank everyone who voted for him. In 2009, Astley wrote about 4chan founder moot for Time magazine's annual Time 100 issue, thanking moot for the rickrolling phenomenon.
-					</p>
-		
-					<p>	
-						According to The Register, as of 2010, Astley had directly received only $12 in performance royalties from YouTube. Although by that time the song had been played 39 million times, Astley did not compose the song and received only a performer's share of the sound recording copyright. However, Astley denied those reports in 2016.
-					</p>	
-			
-					<p>	
-						Astley himself has been rickrolled a few times; in fact, the first time he was rickrolled actually pre-dated the viral phenomenon. In an interview with Larry King, Astley stated that the first time he fell for the prank was through an email his friend sent him during the early 2000s. On a Reddit post in June 2020, a user, u/theMalleableDuck, claimed to have met Astley backstage when they were 12 years old, but the user posted a link to the song instead of a picture verifying the encounter. Astley later confirmed he had been tricked into clicking the link. The submission became the most upvoted post of 2020 on Reddit.
-					</p>
-					</h3>
-				</td>	
-	</table>
-			
-	<hr color="#4A4A4A">
-					
-			<table>		
-				<tr>
-					<td height="100" width="1748">
-						<marquee behavior="scroll" direction="up" loop=-1 scrolldelay="20" Truespeed="on"> 
-							<img src="datafile/rickroll-rick.gif">
-							<h1> Rickrolling------------------------------  </h1>
-							<h2> Rickrolling------------------------------  </h2>
-							<h3> Rickrolling------------------------------  </h3>
-							<h4> Rickrolling------------------------------  </h4>
-							<h5> Rickrolling------------------------------  </h5>
-							<h6> Rickrolling------------------------------  </h6>
-	
-							<marquee behavior="scroll" direction="left" loop=-1 scrolldelay="60" Truespeed="on">
-								<img src="datafile/rickroll-rick.gif">
-								<h1> ------------------------------Rickrolling </h1>	
-								<h2> ------------------------------Rickrolling </h2>	
-								<h3> ------------------------------Rickrolling </h3>	
-								<h4> ------------------------------Rickrolling </h4>	
-								<h5> ------------------------------Rickrolling </h5>	
-								<h6> ------------------------------Rickrolling </h6>	
-							</marquee>
-			
-							<marquee behavior="scroll" direction="right" loop=-1 scrolldelay="60" Truespeed="on">	
-								<img src="datafile/rickroll-rick.gif">		
-								<h1> Rickrolling------------------------------ </h1>				
-								<h2> Rickrolling------------------------------  </h2>			
-								<h3> Rickrolling------------------------------  </h3>				
-								<h4> Rickrolling------------------------------  </h4>			
-								<h5> Rickrolling------------------------------  </h5>		
-								<h6> Rickrolling------------------------------  </h6>		
-							</marquee>
-			
-							<marquee behavior="scroll" direction="down" loop=-1 scrolldelay="20" Truespeed="on">			
-								<img src="datafile/rickroll-rick.gif">
-								<h1> Rickrolling </h1>		
-								<h2> Rickrolling------------------------------ </h2>	
-								<h3> Rickrolling------------------------------ </h3>		
-								<h4> Rickrolling------------------------------ </h4>		
-								<h5> Rickrolling------------------------------ </h5>	
-								<h6> Rickrolling------------------------------ </h6>
-							</marquee>
-						</marquee>		
-					</td>
-				</tr>		
-			</table>		
-		
-	<hr color="#4A4A4A">
-
+	<!--Part_3.2-->
+	<!--Footer_Menu-->
 	<footer>
 		<div>
 			<span class="logo">
@@ -295,96 +287,146 @@
 		</div>
 	
 		<div class="row">
-				<div class="col-3">                
-					<div class="link-cat" onclick="footerToggle(this)">
-						<span class="footer-toggle"></span>
-						<span class="footer-cat">Solution</span>
-					</div>
-					<ul class="footer-cat-links">
-						<li><a href=""><span>Interprise App Development</span></a></li>
-						<li><a href=""><span>Android App Development</span></a></li>
-						<li><a href=""><span>ios App Development</span></a></li>
-					</ul>
+			<div class="col-3">                
+				<div class="link-cat" onclick="footerToggle(this)">
+					<span class="footer-toggle"></span>
+					<span class="footer-cat">Solution</span>
 				</div>
-				<div class="col-3">
-					<div class="link-cat" onclick="footerToggle(this)">
-						<span class="footer-toggle"></span>
-						<span class="footer-cat">Industries</span>
-					</div>
-					<ul class="footer-cat-links">
-						<li><a href=""><span>Healthcare</span></a></li>
-						<li><a href=""><span>Sports</span></a></li>
-						<li><a href=""><span>ECommerce</span></a></li>
-						<li><a href=""><span>Construction</span></a></li>
-						<li><a href=""><span>Club</span></a></li>
-					</ul>
+				<ul class="footer-cat-links">
+					<li><a href=""><span>Interprise App Development</span></a></li>
+					<li><a href=""><span>Android App Development</span></a></li>
+					<li><a href=""><span>ios App Development</span></a></li>
+				</ul>
+			</div>
+
+			<div class="col-3">
+				<div class="link-cat" onclick="footerToggle(this)">
+					<span class="footer-toggle"></span>
+					<span class="footer-cat">Industries</span>
 				</div>
-				<div class="col-3">
-					<div class="link-cat" onclick="footerToggle(this)">
-						<span class="footer-toggle"></span>
-						<span class="footer-cat">Quick Links</span>
-					</div>
-					<ul class="footer-cat-links">
-						<li><a href=""><span>Reviews</span></a></li>
-						<li><a href=""><span>Terms & Condition</span></a></li>
-						<li><a href=""><span>Disclaimer</span></a></li>
-						<li><a href=""><span>Site Map</span></a></li>
-					</ul>
+				<ul class="footer-cat-links">
+					<li><a href=""><span>Healthcare</span></a></li>
+					<li><a href=""><span>Sports</span></a></li>
+					<li><a href=""><span>ECommerce</span></a></li>
+					<li><a href=""><span>Construction</span></a></li>
+					<li><a href=""><span>Club</span></a></li>
+				</ul>
+			</div>
+
+			<div class="col-3">
+				<div class="link-cat" onclick="footerToggle(this)">
+					<span class="footer-toggle"></span>
+					<span class="footer-cat">Quick Links</span>
 				</div>
-				<div class="col-3" id="newsletter">
-					<span>Stay Connected</span>
-					<form id="subscribe">
-						<input type="email" id="subscriber-email" placeholder="Enter Email Address"/>
-						<input type="submit" value="Subscribe" id="btn-scribe"/>
-					</form>
-					
-					<div class="social-links social-2">
-						<a href="https://www.facebook.com/groups/1341837839741935" class="facebook"><i class="fa fa-facebook"></i></a> 
+				<ul class="footer-cat-links">
+					<li><a href=""><span>Reviews</span></a></li>
+					<li><a href=""><span>Terms & Condition</span></a></li>
+					<li><a href=""><span>Disclaimer</span></a></li>
+					<li><a href="site_map.html"><span>Site Map</span></a></li>
+				</ul>
+			</div>
+
+			<div class="col-3" id="newsletter">
+				<span>Stay Connected</span>
+				<form id="subscribe">
+					<input type="email" id="subscriber-email" placeholder="Enter Email Address"/>
+					<input type="submit" value="Subscribe" id="btn-scribe"/>
+				</form>
+				
+				<!--Contect & Social_Media_Link:2-->
+				<div class="social-links social-2"><span>CONTECT US</span><hr><br>
+					<ul>
+						<li>
+							<a href="https://www.facebook.com/groups/1341837839741935" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>  
+							<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+							<a href="https://www.youtube.com/channel/UCr_DB57VFq9hd5Zu-r1BwJA" class="youtube"><i class="fa fa-youtube"></i></a> 
+							<a href="https://github.com/XxAZVDxX" class="github"><i class="fa fa-github"></i></a>
+						</li>
+					</ul>	
+				</div>
+
+				<br>
+
+				<!--Location-->
+				<div id="address">
+					<span>Location</span>
+					<ul>
+						<li>
+							<a href="https://www.ive.edu.hk/ivesite/html/en/campus/st_overview.html">
+								<i class="fa fa-institution"></i>
+							</a>
+							<div>Hong Kong Institute of Vocational Education (Sha Tin)<br/>
+								21 Yuen Wo Road, Sha Tin, NT, Hong Kong
+								<a href="https://www.google.com/maps/place/Hong+Kong+Institute+of+Vocational+Education+(Sha+Tin+Campus),+21+Yuen+Wo+Rd,+Sha+Tin/@22.3906452,114.1980672,17z/data=!4m6!3m5!1s0x340406497098eb4b:0xf2db767fa9507095!8m2!3d22.3906452!4d114.1980672!16s%2Fg%2F155rb7nr">
+									<i class="fa fa-map" style="font-size: 20px"></i>
+								</a>
+							</div>
+						</li>
+
+						<br>
+
+						<li>
+							<a href="https://www.ive.edu.hk/ivesite/html/en/campus/st_overview.html">
+								<i class="fa fa-globe"></i>
+							</a>
+							<div>Hong Kong Institute of Vocational Education (Sha Tin)<br/>
+								21 Yuen Wo Road, Sha Tin, NT, Hong Kong
+								<a href="https://www.google.com/maps/place/Hong+Kong+Institute+of+Vocational+Education+(Sha+Tin+Campus),+21+Yuen+Wo+Rd,+Sha+Tin/@22.3906452,114.1980672,17z/data=!4m6!3m5!1s0x340406497098eb4b:0xf2db767fa9507095!8m2!3d22.3906452!4d114.1980672!16s%2Fg%2F155rb7nr">
+									<i class="fa fa-map" style="font-size: 20px"></i>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>	
+			</div>
+
+			<!--Contect & Social_Media_Link:2-->
+			<div class="social-links social-1 col-6"><span>CONTECT US</span><hr><br>
+				<ul>
+					<li>
+						<a href="https://www.facebook.com/groups/1341837839741935" class="facebook"><i class="fa fa-facebook"></i></a>
 						<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>  
 						<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
 						<a href="https://www.youtube.com/channel/UCr_DB57VFq9hd5Zu-r1BwJA" class="youtube"><i class="fa fa-youtube"></i></a> 
 						<a href="https://github.com/XxAZVDxX" class="github"><i class="fa fa-github"></i></a>
-					</div>
-	
-					<div id="address">
-						<span>Office Location</span>
-						<ul>
-							<li>
-								<i class="far fa-building"></i>
-								<div>Los Angeles<br/>
-								Office 9B, Sky High Tower, New A Ring Road, Los Angeles</div>
-							</li>
-							<li>
-								<i class="fas fa-gopuram"></i>
-								<div>Delhi<br/>
-								Office 150B, Behind Sana Gate Char Bhuja Tower, Station Road, Delhi</div>
-							</li>
-						</ul>
-					</div>	
-				</div>
-				<div class="social-links social-1 col-6">
-					<a href="https://www.facebook.com/groups/1341837839741935" class="facebook"><i class="fa fa-facebook"></i></a> 
-					<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>  
-					<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-					<a href="https://www.youtube.com/channel/UCr_DB57VFq9hd5Zu-r1BwJA" class="youtube"><i class="fa fa-youtube"></i></a> 
-					<a href="https://github.com/XxAZVDxX" class="github"><i class="fa fa-github"></i></a>
-				</div>
+					</li>
+				</ul>	
+			</div>
 		</div>
+
+		<!--Footer_CopyRight & Owner-->
 		<div id="copyright">
 			<span>AZVD &copy; 2023</span>
 		</div>	
 		<div id="owner">
 			<span>
-				Designed by <a href="https://www.codingtuting.com">JohnnyChan</a>
+				Designed by <a href="ABOUTUS.html">JohnnyChan</a>
 			</span>
 		</div>
-	</footer>
-	</div>
+		
+		<!--PayPal_Donation_Btn-->
+		<form action="https://www.paypal.com/donate" method="post" target="_top"> <!-- Identify your business so that you can collect the payments. -->
+			<input type="hidden" name="business" value="56497631z@gmail.com"> <!-- Specify details about the contribution --> 
+			<input type="hidden" name="no_recurring" value="0"> 
+			<input type="hidden" name="item_name" value="Friends of the Park"> 
+			<input type="hidden" name="item_number" value="Fall Cleanup Campaign"> 
+			<input type="hidden" name="currency_code" value="USD"> 		<!-- Display the payment button. --> 
+			<input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate"> 
+			<img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+		</form>
 
-	<!--JS files-->
+	</footer>
+
+	<!--Part_4-->
+	<!--JS_Files-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 	<script src="script.js"></script>
-		
+
+	<script src="lan.js"></script>
+
+	<script src="language_select.js"></script>
+
 </body>
 </html>

@@ -50,6 +50,13 @@ nav .navbar{
   /* background: red; */
   padding: 0 50px;
 }
+
+.functionset{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .navbar .logo a{
   font-size: 30px;
   color: #fff;
@@ -171,7 +178,7 @@ nav .navbar .links li:hover .roll2-sub-menu {
 
 .navbar .search-box{
   position: relative;
-   height: 40px;
+  height: 40px;
   width: 40px;
 }
 
@@ -210,6 +217,83 @@ div .search-box{
   pointer-events: auto;
   background: #3E8DA8;
 }
+
+
+/*Search_Bar*/
+.input-box {
+  position: relative;
+  display: inline-block;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.input-box-items {
+  
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: scroll; /* Add vertical scrollbar */
+  width: 300px;
+  min-height: auto ;
+  max-height: 300px;
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-radius: 6px;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.input-box-items div {
+  padding: 10px;
+  width: 300px;
+  cursor: pointer;
+  background-color: #fff; 
+  color: #000;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+/*when hovering an item:*/
+.input-box-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.input-box-active {
+  background-color: DodgerBlue !important; 
+  color: #e25656; 
+}
+
+.input-box .search_icon i{
+  position: absolute;
+  right: 0%;
+  top: 15%;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #3E8DA8;
+  cursor: pointer;
+}
 .search-box .input-box::before{
   content: '';
   position: absolute;
@@ -233,13 +317,16 @@ div .search-box{
   font-size: 16px;
   border: none;
 }
+
+/**/
+
 .navbar .nav-links .sidebar-logo{
   display: none;
 }
 .navbar .bx-menu{
   display: none;
 }
-@media (max-width:920px) {
+@media (max-width:1200px) {
   nav .navbar{
     max-width: 100%;
     padding: 0 25px;
@@ -256,7 +343,7 @@ div .search-box{
     font-size: 15px;
   }
 }
-@media (max-width:800px){
+@media (max-width:1200px){
  /* nav{
      position: relative; 
   }*/
@@ -379,7 +466,7 @@ nav a:hover{
     background-color: #3E8DA8;
     color: #000000;
 }
-
+/*Wedsite_Scroll_Progress_Bar*/
 .progress-container {
   z-index: 1;
   position: fixed;
@@ -400,7 +487,7 @@ nav a:hover{
   padding: 100px 0;
   margin: 50px auto 0 auto;
 }
-
+/*Wedsite_Scroll_Bar*/
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -410,6 +497,7 @@ nav a:hover{
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
   border-radius: 10px;
+
 }
  
 /* Handle */
@@ -1061,9 +1149,12 @@ footer {
   position: relative;
 }
 
+
+
 .A {
   width: 50%;
   height: 50%;
+  top: 10%;
   position: absolute;
   pointer-events: none;
   opacity: 0;
@@ -1090,10 +1181,11 @@ footer {
 .a {
   width: 50%;
   height: 50%;
+  top: 10%;
   pointer-events: none;
   position: absolute;
   opacity: 0;
-  transform: scale(0.3) rotate(65deg);
+  transform: scale(0.3) rotate(90deg);
   transition: transform 0.3s ease-in, opacity 0.2s ease-in 0.1s;
 }
 
@@ -1257,7 +1349,5 @@ footer {
 }
 
 .dark-mode{
-  
   color: red;
 }
-
